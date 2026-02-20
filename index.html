@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>port folio</title>
+    <!--リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <p class="header__logo">Port folio</p>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            
+            <h1>Web Coder Portfolio</h1>
+            <p>HTML / CSS を中心に学習中
+                レスポンシブ対応と構造を意識したコーディングを心がけています
+            </p>
+            <img src="img/works.jpg" alt="">
+        </section>
+
+
+        <section class="about">
+            <h2>About</h2>
+            <p>Web制作を学習中のフロントエンド志望です。
+                HTML / CSS を中心に、レイアウト設計や
+                レスポンシブ対応を意識して制作しています。
+            </p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>HTML / CSS
+                ・Flexbox / Grid
+                ・レスポンシブ対応
+
+                JavaScript
+                ・基本的なDOM操作を学習中
+            </p>
+        </section>
+
+        <section class="works">
+
+            <h2>Works</h2>
+
+            <div class="works__container">
+                <!-- <button class="works__btn works__btn--prev">←</button> -->
+
+                <div class="works__list">
+
+
+
+                    <div class="work-card">
+                        <a href="#" class="work-card__image">
+                            <img src="img/works-profile.png" alt="初期制作プロフィールサイトのサムネイル"></a>
+
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
+                            <p class="work-card__tech">HTML / CSS（Grid / Flex）</p>
+
+                            <ul class="work-card__list">
+                                <li>デモ用プロフィールサイト（架空情報）</li>
+                                <li>Grid / flex を使ったカードレイアウトとレスポンシブ対応</li>
+                                <li>見出し構造を（hタグ）を意識したHTML設計</li>
+                            </ul>
+                            <a href="https://yayoi08389-netizen.github.io/my-portfolio/" target="_blank" rel="noopener">
+                                View Site</a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="work-card">
+                        <a href="#" class="work-card__image">
+                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
+
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
+                            <p class="work-card__tech">HTML / CSS</p>
+
+                            <ul class="work-card__list">
+                                <li>HTML構造を意識したマークアップ</li>
+                                <li>カードレイアウトを実装</li>
+                                <li>レスポンシブ対応</li>
+                            </ul>
+                            <a href="#" class="work-card__link">View Site</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="work-card">
+                        <a href="#" class="work-card__image">
+                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
+
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
+                            <p class="work-card__tech">HTML / CSS</p>
+
+                            <ul class="work-card__list">
+                                <li>HTML構造を意識したマークアップ</li>
+                                <li>カードレイアウトを実装</li>
+                                <li>レスポンシブ対応</li>
+                            </ul>
+                            <a href="#" class="work-card__link">View Site</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="work-card">
+                        <a href="#" class="work-card__image">
+                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
+
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
+                            <p class="work-card__tech">HTML / CSS</p>
+
+                            <ul class="work-card__list">
+                                <li>HTML構造を意識したマークアップ</li>
+                                <li>カードレイアウトを実装</li>
+                                <li>レスポンシブ対応</li>
+                            </ul>
+                            <a href="#" class="work-card__link">View Site</a>
+                        </div>
+                    </div>
+                    <!-- <button class="works__btn works__btn--next">→</button> -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>お問い合わせは以下よりお願いいたします。</p>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
