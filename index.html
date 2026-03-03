@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <p class="header__logo">Port folio</p>
+            <p class="header__logo"><a href="">Port folio</a></p>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li><a href="#about">About</a></li>
@@ -26,8 +26,10 @@
     </header>
 
     <main>
+        <!-----------
+            hero---------------------->
         <section class="hero">
-            
+
             <h1>Web Coder Portfolio</h1>
             <p>HTML / CSS を中心に学習中
                 レスポンシブ対応と構造を意識したコーディングを心がけています
@@ -35,130 +37,166 @@
             <img src="img/works.jpg" alt="">
         </section>
 
-
+        <!-----------
+           about---------------------->
         <section class="about">
-            <h2>About</h2>
-            <p>Web制作を学習中のフロントエンド志望です。
-                HTML / CSS を中心に、レイアウト設計や
-                レスポンシブ対応を意識して制作しています。
-            </p>
+            <h2 class="about__title">About</h2>
+            <div class="about__inner">
+                <div class="about__image">
+                    <img src="img/works.jpg" alt="プロフィール写真">
+                </div>
+                <div class="about__text">
+                    <p>
+                        2025年8月より、Web制作（主にコーディング）を独学で学習しています。
+                    </p>
+                    <p>
+                        前職では飲食業・サービス業を経験。
+                        クラウドソーシングでWebサイト制作に携わる中で、
+                        コードによってサイトが形になる過程に強く魅力を感じ、
+                        未経験からWeb制作への転職を決意しました。
+                    </p>
+                    <p>
+                        サイトの目的やデザイン意図を正しく理解し、
+                        丁寧で正確なコーディングを心がけています。
+                    </p>
+                </div>
+            </div>
         </section>
+
+
+        <!-----------
+              skills---------------------->
         <section class="skills">
-            <h2>Skills</h2>
-            <p>HTML / CSS
-                ・Flexbox / Grid
-                ・レスポンシブ対応
-
-                JavaScript
-                ・基本的なDOM操作を学習中
-            </p>
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__icons">
+                <div class="skills__icon">
+                    <img src="img/skills-1.jpeg" alt="htmlアイコン">
+                    <p>基本的なHTML構造を理解し、読みやすく整理されたマークアップができます。</p>
+                </div>
+                <div class="skills__icon">
+                    <img src="img/skills-2.jpeg" alt="cssアイコン">
+                    <p>余白や配置を整え、Flexboxを使った基本的なレスポンシブ対応が可能です。</p>
+                </div>
+                <div class="skills__icon">
+                    <img src="img/skills-3.jpeg" alt="jsアイコン">
+                    <p>表示切り替えなど、UIを補助する簡単な動きを実装できます。</p>
+                </div>
+            </div>
         </section>
 
+
+        <!-----------
+              works---------------------->
         <section class="works">
-
-            <h2>Works</h2>
-
+            <h2 class="works__title">Works</h2>
             <div class="works__container">
-                <!-- <button class="works__btn works__btn--prev">←</button> -->
 
                 <div class="works__list">
-
-
-
-                    <div class="work-card">
+                    <!--practis-->
+                    <div class="work-card js-fade">
                         <a href="#" class="work-card__image">
-                            <img src="img/works-profile.png" alt="初期制作プロフィールサイトのサムネイル"></a>
+                            <img src="img/works-practice.png" alt="初期制作プロフィールサイトのサムネイル"></a>
 
                         <div class="work-card__body">
                             <h3 class="work-card__title">初期制作プロフィールサイト</h3>
-                            <p class="work-card__tech">HTML / CSS（Grid / Flex）</p>
+                            <p class="work-card__tech">HTML / CSS</p>
 
                             <ul class="work-card__list">
-                                <li>デモ用プロフィールサイト（架空情報）</li>
-                                <li>Grid / flex を使ったカードレイアウトとレスポンシブ対応</li>
+                                <li>デモ用プロフィールサイト（架空）</li>
+                                <li>PC / SP どちらでも読みやすいレイアウトを意識して設計</li>
                                 <li>見出し構造を（hタグ）を意識したHTML設計</li>
                             </ul>
-                            <a href="https://yayoi08389-netizen.github.io/my-portfolio/" target="_blank" rel="noopener">
+
+                            <a class="work-card__link" href="https://su-web-08389.github.io/practice-site/"
+                                target="_blank" rel="noopener">
                                 View Site</a>
                         </div>
-
                     </div>
 
-
-
-
-
-                    <div class="work-card">
+                    <!--lp-->
+                    <div class="work-card js-fade">
                         <a href="#" class="work-card__image">
-                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
+                            <img src="img/works-lp.jpg" alt="介護施設の紹介LP（架空）のサムネイル"></a>
 
                         <div class="work-card__body">
-                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
+                            <h3 class="work-card__title">介護施設の紹介LP（架空）</h3>
                             <p class="work-card__tech">HTML / CSS</p>
 
                             <ul class="work-card__list">
-                                <li>HTML構造を意識したマークアップ</li>
-                                <li>カードレイアウトを実装</li>
+                                <li>情報の見やすさを意識したHTML構造</li>
+                                <li>シンプルなレイアウト設計</li>
                                 <li>レスポンシブ対応</li>
                             </ul>
-                            <a href="#" class="work-card__link">View Site</a>
+                            <a class="work-card__link" href="https://su-web-08389.github.io/lp-care-facility/"
+                                target="_blank" rel="noopener">
+                                View Site</a>
                         </div>
                     </div>
 
-
-
-
-
-                    <div class="work-card">
+                    <!--corporate-->
+                    <div class="work-card js-fade">
+                        <span class="work-card__badge">制作中</span>
                         <a href="#" class="work-card__image">
-                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
+                            <img src="img/works-corporate.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
 
                         <div class="work-card__body">
-                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
-                            <p class="work-card__tech">HTML / CSS</p>
+                            <h3 class="work-card__title">飲食企業 コーポレートサイト（制作中）</h3>
+                            <p class="work-card__tech">HTML / CSS / JS（簡単な動き）</p>
 
                             <ul class="work-card__list">
-                                <li>HTML構造を意識したマークアップ</li>
-                                <li>カードレイアウトを実装</li>
-                                <li>レスポンシブ対応</li>
+                                <li>カード型レイアウトでコンテンツを整理</li>
+                                <li>表（テーブル）や地図など、実務でよく使う要素を組み込み実装</li>
+                                <li>JSを使った簡単な動きの実装</li>
                             </ul>
-                            <a href="#" class="work-card__link">View Site</a>
+                            <a class="work-card__link" href="https://su-web-08389.github.io/corporate/" target="_blank"
+                                rel="noopener">
+                                View Site</a>
                         </div>
                     </div>
-
-
-
-
-
-                    <div class="work-card">
-                        <a href="#" class="work-card__image">
-                            <img src="img/works.jpg" alt="初期制作プロフィールサイトのサムネイル"></a>
-
-                        <div class="work-card__body">
-                            <h3 class="work-card__title">初期制作プロフィールサイト</h3>
-                            <p class="work-card__tech">HTML / CSS</p>
-
-                            <ul class="work-card__list">
-                                <li>HTML構造を意識したマークアップ</li>
-                                <li>カードレイアウトを実装</li>
-                                <li>レスポンシブ対応</li>
-                            </ul>
-                            <a href="#" class="work-card__link">View Site</a>
-                        </div>
-                    </div>
-                    <!-- <button class="works__btn works__btn--next">→</button> -->
                 </div>
 
             </div>
 
         </section>
 
-
         <section class="contact">
-            <h2>Contact</h2>
-            <p>お問い合わせは以下よりお願いいたします。</p>
+            <div class="contact__container">
+                <h2 class="contact__title">Contact</h2>
+                <p>お問い合わせは以下よりお願いいたします。</p>
+
+
+                <form action="#" class="contact__form">
+                    <div class="contact__item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="contact__item">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="contact__item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__btn">送信（現在準備中）</button>
+                    <p class="contact-note">
+                        ※現在フォームはダミーです。<br>
+                        お問い合わせは
+                        <a href="mailto:suu.web08389@gmail.com">
+                            suu.web08389@gmail.com
+                        </a>
+                        までお願いいたします。
+                    </p>
+                </form>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <p class="gooter__name">© 2026 Portforio</p>
+</footer>
     <script src="js/main.js"></script>
 </body>
 

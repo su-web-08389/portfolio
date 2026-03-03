@@ -1,11 +1,18 @@
-const list = document.querySelector('.works__list');
-const nextBtn = document.querySelector('.works__btn--next');
-const prevBtn = document.querySelector('.works__btn--prev');
+console.log('main.js 読み込まれてます');
 
-nextBtn.addEventListener('click', () => {
-  list.scrollBy({ left: 400, behavior: 'smooth' });
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeTargets = document.querySelectorAll('.js-fade');
+  console.log('js-fade要素数:', fadeTargets.length);
 
-prevBtn.addEventListener('click', () => {
-  list.scrollBy({ left: -400, behavior: 'smooth' });
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-show');
+      }
+    });
+  });
+
+  fadeTargets.forEach(target => {
+    fadeObserver.observe(target);
+  });
 });
