@@ -11,7 +11,10 @@
 </head>
 
 <body>
+    <!-----------
+            header---------------------->
     <header class="header">
+
         <div class="header__inner">
             <p class="header__logo"><a href="">Port folio</a></p>
             <nav class="header__nav">
@@ -24,41 +27,44 @@
             </nav>
         </div>
     </header>
-
     <main>
+
         <!-----------
             hero---------------------->
         <section class="hero">
-
-            <h1>Web Coder Portfolio</h1>
-            <p>HTML / CSS を中心に学習中
-                レスポンシブ対応と構造を意識したコーディングを心がけています
-            </p>
-            <img src="img/works.jpg" alt="">
+            <div class="container">
+                <h1>Web Coder Portfolio</h1>
+                <p>HTML / CSS を中心に学習中
+                    レスポンシブ対応と構造を意識したコーディングを心がけています
+                </p>
+                <img src="img/works.jpg" alt="">
+            </div>
         </section>
 
         <!-----------
            about---------------------->
         <section class="about">
-            <h2 class="about__title">About</h2>
-            <div class="about__inner">
-                <div class="about__image">
-                    <img src="img/works.jpg" alt="プロフィール写真">
-                </div>
-                <div class="about__text">
-                    <p>
-                        2025年8月より、Web制作（主にコーディング）を独学で学習しています。
-                    </p>
-                    <p>
-                        前職では飲食業・サービス業を経験。
-                        クラウドソーシングでWebサイト制作に携わる中で、
-                        コードによってサイトが形になる過程に強く魅力を感じ、
-                        未経験からWeb制作への転職を決意しました。
-                    </p>
-                    <p>
-                        サイトの目的やデザイン意図を正しく理解し、
-                        丁寧で正確なコーディングを心がけています。
-                    </p>
+            <div class="container">
+                <h2 class="about__title">About</h2>
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="img/works.jpg" alt="プロフィール写真">
+                    </div>
+                    <div class="about__text">
+                        <p>
+                            2025年8月より、Web制作（主にコーディング）を独学で学習しています。
+                        </p>
+                        <p>
+                            前職では飲食業・サービス業を経験。
+                            クラウドソーシングでWebサイト制作に携わる中で、
+                            コードによってサイトが形になる過程に強く魅力を感じ、
+                            未経験からWeb制作への転職を決意しました。
+                        </p>
+                        <p>
+                            サイトの目的やデザイン意図を正しく理解し、
+                            丁寧で正確なコーディングを心がけています。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -67,29 +73,33 @@
         <!-----------
               skills---------------------->
         <section class="skills">
-            <h2 class="skills__title">Skills</h2>
-            <div class="skills__icons">
-                <div class="skills__icon">
-                    <img src="img/skills-1.jpeg" alt="htmlアイコン">
-                    <p>基本的なHTML構造を理解し、読みやすく整理されたマークアップができます。</p>
-                </div>
-                <div class="skills__icon">
-                    <img src="img/skills-2.jpeg" alt="cssアイコン">
-                    <p>余白や配置を整え、Flexboxを使った基本的なレスポンシブ対応が可能です。</p>
-                </div>
-                <div class="skills__icon">
-                    <img src="img/skills-3.jpeg" alt="jsアイコン">
-                    <p>表示切り替えなど、UIを補助する簡単な動きを実装できます。</p>
+            <div class="container">
+                <h2 class="skills__title">Skills</h2>
+                <div class="skills__icons">
+                    <div class="skills__icon">
+                        <img src="img/skills-1.jpeg" alt="htmlアイコン">
+                        <p>基本的なHTML構造を理解し、読みやすく整理されたマークアップができます。</p>
+                    </div>
+                    <div class="skills__icon">
+                        <img src="img/skills-2.jpeg" alt="cssアイコン">
+                        <p>余白や配置を整え、Flexboxを使った基本的なレスポンシブ対応が可能です。</p>
+                    </div>
+                    <div class="skills__icon">
+                        <img src="img/skills-3.jpeg" alt="jsアイコン">
+                        <p>表示切り替えなど、UIを補助する簡単な動きを実装できます。</p>
+                    </div>
                 </div>
             </div>
+
         </section>
 
 
         <!-----------
               works---------------------->
         <section class="works">
-            <h2 class="works__title">Works</h2>
-            <div class="works__container">
+            <div class="container">
+                <h2 class="works__title">Works</h2>
+
 
                 <div class="works__list">
                     <!--practis-->
@@ -154,49 +164,56 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-        </section>
 
+        </section>
+        <!-----------
+              contact---------------------->
         <section class="contact">
-            <div class="contact__container">
-                <h2 class="contact__title">Contact</h2>
-                <p>お問い合わせは以下よりお願いいたします。</p>
+
+            <h2 class="contact__title">Contact</h2>
+            <p>お問い合わせは以下よりお願いいたします。</p>
 
 
-                <form action="#" class="contact__form">
-                    <div class="contact__item">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                    </div>
+            <form action="#" class="contact__form">
+                <div class="contact__item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
 
-                    <div class="contact__item">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
-                    </div>
+                <div class="contact__item">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
 
-                    <div class="contact__item">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="3"></textarea>
-                    </div>
+                <div class="contact__item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
 
-                    <button type="submit" class="contact__btn">送信（現在準備中）</button>
-                    <p class="contact-note">
-                        ※現在フォームはダミーです。<br>
-                        お問い合わせは
-                        <a href="mailto:suu.web08389@gmail.com">
-                            suu.web08389@gmail.com
-                        </a>
-                        までお願いいたします。
-                    </p>
-                </form>
-            </div>
+                <button type="submit" class="contact__btn">送信（現在準備中）</button>
+                <p class="contact-note">
+                    ※現在フォームはダミーです。<br>
+                    お問い合わせは
+                    <a href="mailto:suu.web08389@gmail.com">
+                        suu.web08389@gmail.com
+                    </a>
+                    までお願いいたします。
+                </p>
+            </form>
+
+
         </section>
+
+
+
     </main>
     <footer class="footer">
-        <p class="gooter__name">© 2026 Portforio</p>
-</footer>
+        
+            <p class="footer__name">© 2026 Portfolio</p>
+        
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
