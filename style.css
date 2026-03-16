@@ -1,6 +1,11 @@
+@charset "UTF-8";
+
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
+
 
 .container {
     max-width: 1200px;
@@ -17,11 +22,7 @@ html {
     top: 0;
     z-index: 100;
 
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    background: rgba(94, 64, 64, 0.4); */
-
     background: rgba(255, 255, 255, 0.8);
-    /* 白の半透明 */
     backdrop-filter: blur(10px);
 
 }
@@ -59,6 +60,7 @@ html {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.2;
+
 }
 
 .header__logo a {
@@ -79,14 +81,13 @@ html {
 /* -------------------
        hero------------------ */
 .hero {
-    padding: 60px 0;
+    padding: 20px 0 40px;
     text-align: center;
-
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin: 24px 0 8px;
+    font-size: 2rem;
+    margin: 20px 0;
 }
 
 .hero img {
@@ -123,8 +124,10 @@ html {
 }
 
 .about__image img {
-    width: 400px;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .about__text {
@@ -345,7 +348,7 @@ html {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
     .header__inner {
@@ -359,28 +362,40 @@ html {
         font-size: 14px;
     }
 
+    .hero h1 {
+        margin-bottom: 20px;
+    }
+
     .about__inner {
         flex-direction: column;
         text-align: center;
     }
 
     .about__image img {
-        max-width: 300px;
-        width: 100%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
     }
+.about__text {
+    padding: 0 10px;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+}
 
-    .about__text {
-        padding: 0 10px;
-        text-align: left;
-        margin-top: 20px;
-        line-height: 1.8;
-        letter-spacing: 0.05em;
-    }
+.skills__icons,
+.works__list {
+    grid-template-columns: 1fr;
+}
 
-    .work-card {
-        padding: 24px;
-    }
-    .contact {
-        padding: 40px 20px;
-    }
+.work-card {
+    padding: 24px;
+}
+
+.contact {
+    padding: 40px 20px;
+}
+
 }
