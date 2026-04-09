@@ -95,6 +95,7 @@ html {
     max-height: 580px;
 
     object-fit: cover;
+    object-position: center bottom;
 }
 
 .hero p {
