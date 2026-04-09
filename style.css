@@ -57,15 +57,14 @@ html {
 
 .header__logo {
     margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.2;
-
 }
 
 .header__logo a {
     text-decoration: none;
     color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 
@@ -377,25 +376,26 @@ html {
         border-radius: 50%;
         object-fit: cover;
     }
-.about__text {
-    padding: 0 10px;
-    text-align: left;
-    margin-top: 20px;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-}
 
-.skills__icons,
-.works__list {
-    grid-template-columns: 1fr;
-}
+    .about__text {
+        padding: 0 10px;
+        text-align: left;
+        margin-top: 20px;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+    }
 
-.work-card {
-    padding: 24px;
-}
+    .skills__icons,
+    .works__list {
+        grid-template-columns: 1fr;
+    }
 
-.contact {
-    padding: 40px 20px;
-}
+    .work-card {
+        padding: 24px;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
 
 }
